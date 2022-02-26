@@ -5,135 +5,995 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SSWL-松鼠网络, server: 106.wgong.xyz, port: 11223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb, server: 134.195.196.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 荷兰(欢迎订阅Youtube破解资源君), server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君), server: 172.99.190.188, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CYL-科技（2022.01.31）, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb, server: 134.195.196.147, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港(欢迎订阅Youtube破解资源君), server: 1211hk1.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1211hk1.fans8.xyz}, udp: true}
+  - {name: GB_油管+TG+8度科技, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 荷兰阿伟科技@TG/油管, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nBaG3RmV/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb, server: 172.99.190.205, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 2, server: 172.99.190.205, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 香港(欢迎订阅Youtube破解资源君) 2, server: 91.wowogg.cyou, port: 52291, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国阿伟科技@TG/油管, server: 7.earths.team, port: 443, type: trojan, password: 03f9d1c7-40f9-475c-bf46-e3883ee7da5f, sni: 7.earths.team, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.02.08）, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN_中国_油管 TG 松鼠网络, server: 118.wowogg.cyou, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰阿伟科技@TG/油管 2, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nBaG3RmV/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb, server: 149.202.82.172, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 3, server: 172.99.190.205, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CYL-科技（2022.02.08） 2, server: 172.99.190.205, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港阿伟科技@TG/油管, server: 81.wowogg.cyou, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国--松鼠网络@TG/油管 15, server: fd.speedcar88.com, port: 61268, type: vmess, uuid: 52b6103f-7b2a-4114-81bc-e325e46f494d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fd.speedcar88.com}, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 2, server: 134.195.196.147, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 118.wowogg.cyou, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港阿伟科技@TG/油管 2, server: 113.wowogg.cyou, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.02.08） 3, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 香港(欢迎订阅Youtube破解资源君) 3, server: 136.wowogg.cyou, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 2, server: 134.195.196.193, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 2, server: 81.wowogg.cyou, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 3, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 法国阿伟科技@TG/油管, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 2, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CYL-科技（2022.01.31） 2, server: 198.41.212.9, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 4, server: 134.195.196.147, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 3, server: 134.195.196.193, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: PL_油管 TG 8度科技, server: 0122us.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0122us.fans8.xyz}, udp: true}
+  - {name: 立陶宛阿伟科技, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1222ru.fans8.xyz}, udp: true}
+  - {name: CN_油管 TG 8度科技, server: 183.232.56.161, port: 1612, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 5, server: 134.195.196.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CYL-科技（2022.01.31） 3, server: 198.41.212.15, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 阿伟科技, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 4, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.147, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: 183.232.56.161, port: 1704, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CYL-科技（2022.02.08） 4, server: 172.99.190.205, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 俄罗斯阿伟科技@TG/油管, server: 0122us.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0122us.fans8.xyz}, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 4, server: 134.195.196.193, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CYL-科技（2022.02.08） 5, server: 172.99.190.205, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: FR_油管+TG+8度科技, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 印尼--松鼠网络@TG/油管, server: 183.232.56.161, port: 1952, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: ZA_南非_油管 TG 8度科技, server: 2.ezydfdd.com, port: 443, type: vmess, uuid: 8ce46aae-dae5-4d50-ebcd-f9514e4c048a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 2.ezydfdd.com}, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 3, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CYL-科技（2022.02.08） 6, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港(欢迎订阅Youtube破解资源君) 4, server: 91.wowogg.cyou, port: 52291, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 2, server: 172.99.190.205, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CYL-科技（2022.01.31） 4, server: 107.167.2.14, port: 443, type: vmess, uuid: 90f14c24-8b0c-4d55-ad2a-62f0eb6aff8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 5, server: 172.99.190.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 6, server: 172.99.190.205, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 6, server: 134.195.196.147, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.147, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CYL-科技（2022.01.31） 5, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: 日本阿伟科技@TG/油管, server: 106.wgong.xyz, port: 11223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港阿伟科技@TG/油管 3, server: eb0453114ec45064654e57eeb394d6671csda.jkcloud.xyz, port: 6666, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 3, server: 127.wowogg.cyou, port: 52227, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(欢迎订阅Youtube破解资源君) 5, server: 110.wowogg.cyou, port: 52210, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港阿伟科技@TG/油管 4, server: 139.226.50.243, port: 6666, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: SSWL-松鼠网络, server: saipa.iranecar.com, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vmess-share/?ed=2048", ws-headers: {Host: ruvds.testx.eu.org}, udp: true}
+  - {name: 美国-1.15MB/s(Youtube:不良林), server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 5, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 法国阿伟科技@TG/油管 2, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CYL-科技（2022.02.08） 7, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: 2022-world-1.a-yu.xyz}, udp: true}
+  - {name: 香港阿伟科技@TG/油管 5, server: eb0453114ec45064654e57eeb394d6671csda.jkcloud.xyz, port: 6666, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.02.08） 8, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 6, server: 134.195.196.193, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国-1.56MB/s(Youtube:不良林), server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 4, server: 129.wowogg.cyou, port: 52329, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 7, server: 172.99.190.205, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港阿伟科技@TG/油管 6, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 18888, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 7, server: 134.195.196.193, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 3, server: 96.wowogg.cyou, port: 52296, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 7, server: 134.195.196.147, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 5, server: 86.wowogg.cyou, port: 52286, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.147, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 香港阿伟科技@TG/油管 7, server: 183.232.163.19, port: 18888, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 4, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 日本阿伟科技@TG/油管 2, server: 94.wowogg.cyou, port: 52294, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本阿伟科技@TG/油管 3, server: 103.wowogg.cyou, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_油管+TG+8度科技 2, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: 183.232.56.161, port: 1101, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 4, server: 172.99.190.205, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 8, server: 134.195.196.147, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 5, server: 149.202.82.172, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: GB_油管+TG+8度科技 3, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 8, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 8, server: 134.195.196.193, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_油管+TG+8度科技 4, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 香港阿伟科技@TG/油管 8, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 18888, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.01.31） 6, server: 135.wgong.xyz, port: 52335, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国-1.18MB/s(Youtube:不良林), server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.147, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 9, server: 134.195.196.193, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 9, server: 134.195.196.147, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国阿伟科技@TG/油管 2, server: 7.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 7.earths.team, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 6, server: 1222mnl.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1222mnl.fans8.xyz}, udp: true}
+  - {name: CYL-科技（2022.01.31） 7, server: 172.105.205.190, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 6, server: 149.202.82.172, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国阿伟科技@TG/油管 3, server: 158.101.23.238, port: 45565, type: vmess, uuid: 8892ba45-ee29-407a-d5cb-a65cb9840b0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wenzhang, ws-headers: {Host: 158.101.23.238}, udp: true}
+  - {name: 香港阿伟科技@TG/油管 9, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6666, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CA_油管+TG+8度科技, server: 134.195.196.147, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 9, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 5, server: 104.wowogg.cyou, port: 11222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本阿伟科技@TG/油管 4, server: 84.wowogg.cyou, port: 52284, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 10, server: 134.195.196.147, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 7, server: niaop.tk, port: 443, type: vmess, uuid: a0b0df87-bda2-440e-830f-347da6cc7760, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /wsssdr1, ws-headers: {Host: niaop.tk}, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 7, server: 149.202.82.172, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 6, server: 172.99.190.188, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 台湾阿伟科技@TG/油管, server: tw.tcpbbr.net, port: 443, type: trojan, password: b155c2a4-ee79-11eb-a8bf-f23c91cfbbc9, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: TW_台湾（松鼠网络）12Mb, server: 111.wowogg.cyou, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 10, server: 134.195.196.193, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_油管+TG+8度科技 5, server: 172.99.190.188, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大 5, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 7, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CYL-科技（2022.01.31） 8, server: dax6ujai.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
+  - {name: 日本阿伟科技@TG/油管 5, server: 92.wowogg.cyou, port: 52292, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.01.31） 9, server: 172.105.205.190, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 8, server: 82.wowogg.cyou, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 10, server: 172.99.190.205, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 8, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 11, server: 134.195.196.193, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: 183.232.56.161, port: 1211, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: GB_英国-002（松鼠网络）2Mb, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CYL-科技（2022.02.08） 9, server: 149.202.82.172, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CN_油管 TG 8度科技 5, server: 183.232.56.161, port: 1501, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 香港→日本0001-01, server: 95.wowogg.cyou, port: 52295, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港-2.23MB/s(Youtube:不良林), server: 0107hk.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0107hk.fans8.xyz}, udp: true}
+  - {name: CYL-科技（2022.01.31） 10, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
   - {name: 香港→日本-SSWL-松鼠网络, server: 20.187.103.243, port: 52295, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港→日本-SSWL-松鼠网络 2, server: 93.wowogg.cyou, port: 52293, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港阿伟科技@TG/油管 10, server: 89.wowogg.cyou, port: 52289, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 11, server: 134.195.196.147, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 香港-SSWL-松鼠网络, server: c4jrauwu5v.eastasia.cloudapp.azure.com, port: 61690, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: c4jrauwu5v.eastasia.cloudapp.azure.com}, udp: true}
-  - {name: SSWL-松鼠网络 2, server: saipa.iranecar.com, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vmess-share/?ed=2048", ws-headers: {Host: ruvds.testx.eu.org}, udp: true}
-  - {name: SSWL-松鼠网络 3, server: 192.53.169.116, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SSWL-松鼠网络 4, server: 38.75.136.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: SSWL-松鼠网络 5, server: 38.91.100.27, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: SSWL-松鼠网络 6, server: 192.53.169.116, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SSWL-松鼠网络 7, server: 192.53.169.116, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SSWL-松鼠网络 8, server: 38.75.136.49, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: SSWL-松鼠网络 9, server: 38.75.136.49, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SSWL-松鼠网络 10, server: 192.53.169.116, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SSWL-松鼠网络 11, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: GB_英国-001（松鼠网络）2Mb, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: GB_英国-001（松鼠网络）2Mb 2, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: GB_英国-001（松鼠网络）2Mb 3, server: 172.99.190.149, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_加拿大-001（松鼠网络）3Mb, server: 134.195.196.200, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_加拿大-001（松鼠网络）3Mb 2, server: 134.195.196.200, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: GB_英国-001（松鼠网络）2Mb 4, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: GB_英国-001（松鼠网络）2Mb 5, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: GB_英国-001（松鼠网络）2Mb 6, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA_加拿大-001（松鼠网络）3Mb 3, server: 134.195.196.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_加拿大-001（松鼠网络）3Mb 4, server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CA_加拿大-001（松鼠网络）3Mb 5, server: 134.195.196.200, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_加拿大-001（松鼠网络）3Mb 6, server: 134.195.196.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: SSWL-松鼠网络 12, server: 172.99.190.149, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: SSWL-松鼠网络 13, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 9, server: 149.202.82.172, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 12, server: 134.195.196.193, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 新加坡阿伟科技@TG/油管, server: s2.kaxff.com, port: 32432, type: trojan, password: OcABzr5wEG, sni: s2.kaxff.com, skip-cert-verify: true, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 10, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 卢森堡阿伟科技@TG/油管, server: sadadwfiouahofhwofiuahh.jkcloud.xyz, port: 15877, type: ss, cipher: chacha20-ietf-poly1305, password: e5bf31e0-0ffc-4acf-877e-442fab645ec3, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 9, server: 98.wowogg.cyou, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_英国-002（松鼠网络）2Mb 2, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 10, server: 90.wowogg.cyou, port: 52290, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技, server: 112.118.0.202, port: 4080, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 13, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 12, server: 134.195.196.147, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: PH_菲律宾001（松鼠网络-菲律宾）12Mb, server: 1222mnl.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 165.154.233.7}, udp: true}
+  - {name: 香港阿伟科技@TG/油管 11, server: 118.wowogg.cyou, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 14, server: 134.195.196.193, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 香港--松鼠网络@TG/油管 14, server: 3.ezydfdd.com, port: 443, type: vmess, uuid: 71398e51-4573-46b5-aa21-22e210f2979b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 3.ezydfdd.com}, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 15, server: 134.195.196.193, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 中国阿伟科技, server: 118.wowogg.cyou, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 11, server: 172.99.190.205, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 16, server: 134.195.196.193, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 台湾阿伟科技@TG/油管 2, server: 111.wowogg.cyou, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 8, server: 103.wowogg.cyou, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 12, server: 172.99.190.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 11, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CYL-科技（2022.01.31） 11, server: 169.197.141.91, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 11, server: 118.wowogg.cyou, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 6, server: 183.232.56.161, port: 8099, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CYL-科技（2022.02.08） 10, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 香港→日本0001-01 2, server: 95.wowogg.cyou, port: 52295, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 17, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国阿伟科技@TG/油管 4, server: 7.earths.team, port: 443, type: trojan, password: cd1561db-c5b3-4e37-960d-39825cae663c, sni: 7.earths.team, skip-cert-verify: true, udp: true}
+  - {name: 香港阿伟科技, server: 88.wowogg.cyou, port: 52288, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 12, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 新加坡阿伟科技@TG/油管 2, server: s1.kaxff.com, port: 15654, type: trojan, password: 6Uu5c0cJUV, sni: s1.kaxff.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 12, server: 169.197.141.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 13, server: 172.99.190.205, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.147, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_加拿大-003（松鼠网络）3Mb 13, server: 134.195.196.147, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 18, server: 134.195.196.193, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 韩国--松鼠网络@TG/油管 4, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 13, server: 7.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 7.earths.team, skip-cert-verify: true, udp: true}
+  - {name: 日本(欢迎订阅Youtube破解资源君), server: fq.0112391.xyz, port: 12226, type: trojan, password: 1qaz2wsx, sni: fq.0112391.xyz, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 14, server: 0118ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0118ru.fans8.xyz}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 15, server: 0118ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0118ru.fans8.xyz}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 16, server: 1222mnl.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1222mnl.fans8.xyz}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 17, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1222ru.fans8.xyz}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 18, server: dax6ujai.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
+  - {name: 美国--松鼠网络@TG/油管 3, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国--松鼠网络@TG/油管 16, server: jason.lbtzyw.com, port: 443, type: vmess, uuid: f3a8372f-73aa-4a92-9f23-cfa0a9830d7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/zovpvws?ed=2048", ws-headers: {Host: jason.lbtzyw.com}, udp: true}
+  - {name: 美国--松鼠网络@TG/油管 14, server: 104.16.160.114, port: 443, type: vmess, uuid: 4daecd66-d4e2-4577-bf79-47c90daa716d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /jackson2025_vws, ws-headers: {Host: jackson2025.cf}, udp: true}
+  - {name: 美国阿伟科技@TG/油管 5, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 立陶宛阿伟科技 2, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1222ru.fans8.xyz}, udp: true}
+  - {name: 韩国--松鼠网络@TG/油管 6, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国--松鼠网络@TG/油管 3, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技@TG/油管, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技@TG/油管 2, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技@TG/油管 3, server: chuna1.515223.xyz, port: 24793, type: vmess, uuid: 58975106-dc46-4942-b79e-336da67f1bbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技@TG/油管 4, server: v.mumi.bid, port: 10121, type: vmess, uuid: 403acd13-9d60-44f1-ac2d-0359cd5e2d7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v.mumi.bid}, udp: true}
+  - {name: 阿伟科技@TG/油管, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: _US_美国, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: _US_美国 2, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: _FR_法国, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _FR_法国 2, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _FR_法国 3, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _FR_法国 4, server: 149.202.82.172, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: KR阿伟科技@TG/油管, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 14, server: 172.99.190.205, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: GB_英国-003（松鼠网络）2Mb 15, server: 172.99.190.205, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国-002（松鼠网络）2Mb 3, server: 172.99.190.188, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: FR_法国-001（松鼠网络）2Mb 13, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR_法国, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: CYL-科技（2022.02.08） 11, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CYL-科技（2022.02.08） 12, server: 172.99.190.205, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CYL-科技（2022.02.08） 13, server: 172.99.190.205, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CYL-科技（2022.02.08） 14, server: 172.99.190.205, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CYL-科技（2022.02.08） 15, server: 172.99.190.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CYL-科技（2022.01.31） 12, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 19, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA_加拿大-002（松鼠网络）3Mb 20, server: 134.195.196.193, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.147, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_油管 TG 8度科技, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ua1.uuv2.co.uk}, udp: true}
+  - {name: JP_油管 TG 8度科技, server: os2-7.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-7.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 9, server: v2.mumi.bid, port: 10123, type: vmess, uuid: 4924189e-9739-47be-9875-fe5c87e485ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v2.mumi.bid}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 19, server: 61.222.202.213, port: 12880, type: vmess, uuid: d4b64497-2773-4281-96f1-fc2914ea3c28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 61.222.202.213}, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君), server: 183.232.56.161, port: 1802, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 印度阿伟科技@TG/油管, server: 155.248.244.247, port: 45565, type: vmess, uuid: 4cfa02c7-e7b3-48e2-c8dc-7bb9bbae36ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /liangting, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 印度阿伟科技@TG/油管 2, server: 155.248.242.150, port: 45565, type: vmess, uuid: ece341dc-4d70-4f03-a21a-e75136b90e7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /blog, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 日本阿伟科技@TG/油管 6, server: 155.248.183.96, port: 45565, type: vmess, uuid: 44c36ab6-f82b-4a59-97f0-331066ea3fe8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 美国阿伟科技@TG/油管 6, server: cloudflare.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
+  - {name: 美国阿伟科技@TG/油管 7, server: 192.18.132.64, port: 45565, type: vmess, uuid: 2e93c685-d743-410d-b96b-628a00018c72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /blog, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 美国阿伟科技@TG/油管 8, server: 192.18.143.154, port: 45565, type: vmess, uuid: 04868706-81d0-4f50-e72e-4b0d1db2d258, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /newbanli, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 韩国阿伟科技@TG/油管 5, server: 150.230.252.80, port: 45565, type: vmess, uuid: c18ccae1-572b-4516-d120-22154ea8db06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /blog, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 迪拜阿伟科技@TG/油管, server: 193.123.80.75, port: 45565, type: vmess, uuid: d3c4478d-15f5-47e5-88e4-2d86b8d476bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /indexposttest, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 迪拜阿伟科技@TG/油管 2, server: 193.123.84.188, port: 45565, type: vmess, uuid: c8983b5e-ec6f-4c6b-ec9f-6d10540c1a6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /blog, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 澳大利亚阿伟科技@TG/油管, server: 150.230.14.48, port: 45565, type: vmess, uuid: 77bdba5f-f38b-427b-c21a-2712c530a71d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: JP_油管 TG 8度科技 2, server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国-2.45MB/s(技术在这里), server: 209.141.47.137, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 7, server: 183.232.163.19, port: 18888, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 8, server: 139.226.50.243, port: 6666, type: vmess, uuid: e5bf31e0-0ffc-4acf-877e-442fab645ec3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 9, server: gzbgpss.8n4t.cn, port: 20115, type: trojan, password: 43a29215-a4c6-3b8a-9697-5242c8f09213, sni: gzbgpss.8n4t.cn, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: 209.141.47.137, port: 443, type: trojan, password: 03f9d1c7-40f9-475c-bf46-e3883ee7da5f, skip-cert-verify: true, udp: true}
+  - {name: NL_油管 TG 8度科技, server: 185.126.148.23, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 2, server: 183.232.56.161, port: 5018, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 3, server: 183.232.56.161, port: 1101, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 4, server: 183.232.56.161, port: 1704, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 5, server: 183.232.56.161, port: 1501, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -152,142 +1012,1025 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港(欢迎订阅Youtube破解资源君)
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 香港阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 香港阿伟科技@TG/油管 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
+      - 香港阿伟科技@TG/油管 5
+      - 香港阿伟科技@TG/油管 6
+      - 香港阿伟科技@TG/油管 7
+      - 香港阿伟科技@TG/油管 8
+      - 香港阿伟科技@TG/油管 9
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
       - 香港-SSWL-松鼠网络
+      - 香港阿伟科技@TG/油管 11
+      - 香港--松鼠网络@TG/油管 14
+      - 台湾阿伟科技@TG/油管 2
+      - 香港→日本0001-01 2
+      - 香港阿伟科技
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -303,34 +2046,249 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_加拿大-002（松鼠网络）3Mb
+      - 荷兰(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技（2022.01.31）
+      - CA_加拿大-003（松鼠网络）3Mb
+      - 香港(欢迎订阅Youtube破解资源君)
+      - GB_油管+TG+8度科技
+      - 荷兰阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 2
+      - 香港(欢迎订阅Youtube破解资源君) 2
+      - 美国阿伟科技@TG/油管
+      - CYL-科技（2022.02.08）
+      - CN_中国_油管 TG 松鼠网络
+      - 荷兰阿伟科技@TG/油管 2
+      - FR_法国-001（松鼠网络）2Mb
+      - GB_英国-003（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 2
+      - 香港阿伟科技@TG/油管
+      - 美国--松鼠网络@TG/油管 15
+      - CA_加拿大-003（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 香港阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 3
+      - 香港(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-002（松鼠网络）3Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - CA_加拿大-003（松鼠网络）3Mb 3
+      - 法国阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 2
+      - CYL-科技（2022.01.31） 2
+      - CA_加拿大-003（松鼠网络）3Mb 4
+      - CA_加拿大-002（松鼠网络）3Mb 3
+      - PL_油管 TG 8度科技
+      - 立陶宛阿伟科技
+      - CN_油管 TG 8度科技
+      - CA_加拿大-003（松鼠网络）3Mb 5
+      - CYL-科技（2022.01.31） 3
+      - 阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 4
+      - _CA_加拿大
+      - CN_油管 TG 8度科技 2
+      - CYL-科技（2022.02.08） 4
+      - 俄罗斯阿伟科技@TG/油管
+      - CA_加拿大-002（松鼠网络）3Mb 4
+      - CYL-科技（2022.02.08） 5
+      - FR_油管+TG+8度科技
+      - 印尼--松鼠网络@TG/油管
+      - ZA_南非_油管 TG 8度科技
+      - FR_法国-001（松鼠网络）2Mb 3
+      - CYL-科技（2022.02.08） 6
+      - 香港(欢迎订阅Youtube破解资源君) 4
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - CYL-科技（2022.01.31） 4
+      - GB_英国-003（松鼠网络）2Mb 5
+      - GB_英国-003（松鼠网络）2Mb 6
+      - CA_加拿大-003（松鼠网络）3Mb 6
+      - _CA_加拿大 2
+      - CYL-科技（2022.01.31） 5
+      - 日本阿伟科技@TG/油管
+      - 香港阿伟科技@TG/油管 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - 香港(欢迎订阅Youtube破解资源君) 5
+      - 香港阿伟科技@TG/油管 4
       - SSWL-松鼠网络
+      - 美国-1.15MB/s(Youtube:不良林)
+      - CA_加拿大-002（松鼠网络）3Mb 5
+      - 法国阿伟科技@TG/油管 2
+      - CYL-科技（2022.02.08） 7
+      - 香港阿伟科技@TG/油管 5
+      - CYL-科技（2022.02.08） 8
+      - CA_加拿大-002（松鼠网络）3Mb 6
+      - 美国-1.56MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - GB_英国-003（松鼠网络）2Mb 7
+      - 香港阿伟科技@TG/油管 6
+      - CA_加拿大-002（松鼠网络）3Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - CA_加拿大-003（松鼠网络）3Mb 7
+      - 欧洲(欢迎订阅Youtube破解资源君) 5
+      - _CA_加拿大 3
+      - 香港阿伟科技@TG/油管 7
+      - FR_法国-001（松鼠网络）2Mb 4
+      - 日本阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 3
+      - GB_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 3
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - CA_加拿大-003（松鼠网络）3Mb 8
+      - FR_法国-001（松鼠网络）2Mb 5
+      - GB_油管+TG+8度科技 3
+      - GB_英国-003（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 8
+      - GB_油管+TG+8度科技 4
+      - 香港阿伟科技@TG/油管 8
+      - CYL-科技（2022.01.31） 6
+      - 美国-1.18MB/s(Youtube:不良林)
+      - _CA_加拿大 4
+      - CA_加拿大-002（松鼠网络）3Mb 9
+      - CA_加拿大-003（松鼠网络）3Mb 9
+      - 美国阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - CYL-科技（2022.01.31） 7
+      - FR_法国-001（松鼠网络）2Mb 6
+      - 美国阿伟科技@TG/油管 3
+      - 香港阿伟科技@TG/油管 9
+      - CA_油管+TG+8度科技
+      - GB_英国-003（松鼠网络）2Mb 9
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本阿伟科技@TG/油管 4
+      - CA_加拿大-003（松鼠网络）3Mb 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 7
+      - FR_法国-001（松鼠网络）2Mb 7
+      - 美国(欢迎订阅Youtube破解资源君) 6
+      - 台湾阿伟科技@TG/油管
+      - TW_台湾（松鼠网络）12Mb
+      - CA_加拿大-002（松鼠网络）3Mb 10
+      - GB_油管+TG+8度科技 5
+      - _CA_加拿大 5
+      - 美国(欢迎订阅Youtube破解资源君) 7
+      - CYL-科技（2022.01.31） 8
+      - 日本阿伟科技@TG/油管 5
+      - CYL-科技（2022.01.31） 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 10
+      - FR_法国-001（松鼠网络）2Mb 8
+      - CA_加拿大-002（松鼠网络）3Mb 11
+      - CN_油管 TG 8度科技 4
+      - GB_英国-002（松鼠网络）2Mb
+      - CYL-科技（2022.02.08） 9
+      - CN_油管 TG 8度科技 5
+      - 香港→日本0001-01
+      - 香港-2.23MB/s(Youtube:不良林)
+      - CYL-科技（2022.01.31） 10
       - 香港→日本-SSWL-松鼠网络
-      - 香港→日本-SSWL-松鼠网络 2
+      - 香港阿伟科技@TG/油管 10
+      - CA_加拿大-003（松鼠网络）3Mb 11
       - 香港-SSWL-松鼠网络
-      - SSWL-松鼠网络 2
-      - SSWL-松鼠网络 3
-      - SSWL-松鼠网络 4
-      - SSWL-松鼠网络 5
-      - SSWL-松鼠网络 6
-      - SSWL-松鼠网络 7
-      - SSWL-松鼠网络 8
-      - SSWL-松鼠网络 9
-      - SSWL-松鼠网络 10
-      - SSWL-松鼠网络 11
-      - GB_英国-001（松鼠网络）2Mb
-      - GB_英国-001（松鼠网络）2Mb 2
-      - GB_英国-001（松鼠网络）2Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb
-      - CA_加拿大-001（松鼠网络）3Mb 2
-      - GB_英国-001（松鼠网络）2Mb 4
-      - GB_英国-001（松鼠网络）2Mb 5
-      - GB_英国-001（松鼠网络）2Mb 6
-      - CA_加拿大-001（松鼠网络）3Mb 3
-      - CA_加拿大-001（松鼠网络）3Mb 4
-      - CA_加拿大-001（松鼠网络）3Mb 5
-      - CA_加拿大-001（松鼠网络）3Mb 6
-      - SSWL-松鼠网络 12
-      - SSWL-松鼠网络 13
+      - FR_法国-001（松鼠网络）2Mb 9
+      - CA_加拿大-002（松鼠网络）3Mb 12
+      - 新加坡阿伟科技@TG/油管
+      - FR_法国-001（松鼠网络）2Mb 10
+      - 卢森堡阿伟科技@TG/油管
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - GB_英国-002（松鼠网络）2Mb 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - HK_油管 TG 8度科技
+      - CA_加拿大-002（松鼠网络）3Mb 13
+      - CA_加拿大-003（松鼠网络）3Mb 12
+      - PH_菲律宾001（松鼠网络-菲律宾）12Mb
+      - 香港阿伟科技@TG/油管 11
+      - CA_加拿大-002（松鼠网络）3Mb 14
+      - 香港--松鼠网络@TG/油管 14
+      - CA_加拿大-002（松鼠网络）3Mb 15
+      - 中国阿伟科技
+      - GB_英国-003（松鼠网络）2Mb 11
+      - CA_加拿大-002（松鼠网络）3Mb 16
+      - 台湾阿伟科技@TG/油管 2
+      - 美国(欢迎订阅Youtube破解资源君) 8
+      - GB_英国-003（松鼠网络）2Mb 12
+      - FR_法国-001（松鼠网络）2Mb 11
+      - CYL-科技（2022.01.31） 11
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - CN_油管 TG 8度科技 6
+      - CYL-科技（2022.02.08） 10
+      - 香港→日本0001-01 2
+      - CA_加拿大-002（松鼠网络）3Mb 17
+      - 美国阿伟科技@TG/油管 4
+      - 香港阿伟科技
+      - FR_法国-001（松鼠网络）2Mb 12
+      - 新加坡阿伟科技@TG/油管 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 12
+      - GB_英国-003（松鼠网络）2Mb 13
+      - _CA_加拿大 6
+      - CA_加拿大-003（松鼠网络）3Mb 13
+      - CA_加拿大-002（松鼠网络）3Mb 18
+      - 韩国--松鼠网络@TG/油管 4
+      - 欧洲(欢迎订阅Youtube破解资源君) 13
+      - 日本(欢迎订阅Youtube破解资源君)
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 欧洲(欢迎订阅Youtube破解资源君) 16
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - 美国--松鼠网络@TG/油管 3
+      - 美国--松鼠网络@TG/油管 16
+      - 美国--松鼠网络@TG/油管 14
+      - 美国阿伟科技@TG/油管 5
+      - 立陶宛阿伟科技 2
+      - 韩国--松鼠网络@TG/油管 6
+      - 韩国--松鼠网络@TG/油管 3
+      - 韩国阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管 2
+      - 韩国阿伟科技@TG/油管 3
+      - 韩国阿伟科技@TG/油管 4
+      - 阿伟科技@TG/油管
+      - _US_美国
+      - _US_美国 2
+      - _FR_法国
+      - _FR_法国 2
+      - _FR_法国 3
+      - _FR_法国 4
+      - KR阿伟科技@TG/油管
+      - GB_英国-003（松鼠网络）2Mb 14
+      - GB_英国-003（松鼠网络）2Mb 15
+      - GB_英国-002（松鼠网络）2Mb 3
+      - FR_法国-001（松鼠网络）2Mb 13
+      - FR_法国
+      - CYL-科技（2022.02.08） 11
+      - CYL-科技（2022.02.08） 12
+      - CYL-科技（2022.02.08） 13
+      - CYL-科技（2022.02.08） 14
+      - CYL-科技（2022.02.08） 15
+      - CYL-科技（2022.01.31） 12
+      - CA_加拿大-002（松鼠网络）3Mb 19
+      - CA_加拿大-002（松鼠网络）3Mb 20
+      - _CA_加拿大 7
+      - US_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - 欧洲(欢迎订阅Youtube破解资源君) 19
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 印度阿伟科技@TG/油管
+      - 印度阿伟科技@TG/油管 2
+      - 日本阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 6
+      - 美国阿伟科技@TG/油管 7
+      - 美国阿伟科技@TG/油管 8
+      - 韩国阿伟科技@TG/油管 5
+      - 迪拜阿伟科技@TG/油管
+      - 迪拜阿伟科技@TG/油管 2
+      - 澳大利亚阿伟科技@TG/油管
+      - JP_油管 TG 8度科技 2
+      - 美国-2.45MB/s(技术在这里)
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 亚洲(欢迎订阅Youtube破解资源君) 5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
